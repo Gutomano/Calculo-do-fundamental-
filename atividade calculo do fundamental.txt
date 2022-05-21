@@ -1,0 +1,58 @@
+import java.util.Scanner;
+// importacao de uma biblioteca.
+
+class HelloWorld 
+{
+    public static void main(String[] args) 
+    
+    {
+        Scanner ler = new Scanner(System.in);
+        // criacao de um leitor das variaveis
+        
+        int gtr,gt,ferrari,media;
+        // variaveis ciadas
+        
+        System.out.println("Digite a primeira nota: "); 
+         // mensagem que ira aparecer na tela do usuario
+
+        gtr = ler.nextInt();
+        //variavel que ira receber os(o) numero digitado pelo usuario 
+        
+        System.out.println("Digite a segunda nota: ");
+         // mensagem que ira aparecer na tela do usuario
+
+        gt = ler.nextInt();
+        //variavel que ira receber os(o) numero digitado pelo usuario 
+        
+        System.out.println("Digite a terceira nota: ");
+         // mensagem que ira aparecer na tela do usuario
+
+        ferrari = ler.nextInt();
+        //variavel que ira receber os(o) numero digitado pelo usuario  
+        
+     media = ((gtr+gt+ferrari)/3);
+      //variavel que ira calcula a media do usuario  
+     
+     if (media >= 8 )  
+     // variavel de possibilidade 
+
+    {
+        System.out.println(" Voce foi aprovado parabens!" );
+         // mensagem que ira aparecer na tela do usuario
+    }
+    else if (media < 8 && media > 6 )
+     // variavel de possibilidade 
+
+    {
+        System.out.println(" Voce fara recuperacao ");
+        // mensagem que ira aparecer na tela do usuario
+    }
+  
+    else if ( media <= 6 )
+    // variavel de possibilidade 
+    {
+       System.out.println("puts voce infelizmete foi reprovado");
+       // mensagem que ira aparecer na tela do usuario
+    }
+    }
+}
